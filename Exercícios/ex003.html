@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: rgb(62, 62, 197);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>      
+         
+        
+        // parse - analisar / converter
+        // Estou convertendo o string em um int
+        // O prompt retorna uma string, por isso foi necessária a conversão
+        
+        var n2 = Number(prompt('Digite outro número'))
+        // Estou convertendo o string em um int
+        // Como eu coloquei apenas "Number", o próprio algoritmo irá intepretar se o valor sairá em int, float e etc...
+        var s = n1 + n2
+        window.alert(`O valor da soma entre ${n1} e ${n2} é ${s}`)
+        // essa é a maneira caso eu queira converter a variável "s" para uma String
+    </script>
+</body>
+</html>
