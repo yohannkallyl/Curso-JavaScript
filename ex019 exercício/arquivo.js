@@ -1,34 +1,24 @@
-function contar(){
-    var inicio = document.getElementById("txtinicio")
-    var fim = document.getElementById("txtfim")
-    var passo = document.getElementById("txtpasso")
-    var res = document.getElementById("resultado")
+function gerar() {
+  var num = document.getElementById("number");
+  var tab = document.getElementById("tabuada");
 
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ){
-        alert("[ERRO] Faltam informações!")
-        // Evitar que campos fiquem vazios
-    } else{
-        res.innerHTML = "Contando: "
-    }
-
-    var inici = Number(inicio.value)
-    var fi = Number(fim.value)
-    var pas = Number(passo.value)
-    // Por mais que as caixas estejam como números, elas provavemente retornarão em string. Por isso, transformei os valores em número
-
-    if (inici < fi){
+  if (num.value.length == 0) {
+    alert("[ERRO] Faltam informações");
+  } else {
+    var n1 = Number(num.value);
+    tab.innerHTML = ""
     
-        for(c = inici; c <= fi; c += pas ){
-        res.innerHTML += ` ${c} 👉` 
-    }
-} else{
-    for(c = inici ; c >= fi ; c -= pas ){
-        res.innerHTML += ` ${c} 👉`
-    }
-   
+    // *limpar a tabuada após um valor
+  }
+
+  for(cont = 1; cont <= 10; cont++){
+    var item = document.createElement("option")
+    item.text = `${n1} x ${cont} = ${n1*cont}`
+    tab.appendChild(item)
+  }
 }
 
-    res.innerHTML += "🚩"
 
+// *for (inicialização; condição; iteração) {
+  // *Bloco de código a ser repetido 
 
-}

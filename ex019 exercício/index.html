@@ -1,47 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJETO CURSO EM VÍDEO</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>VAMOS CONTAR</h1>
+      <h1>TABUADA</h1>
     </header>
-    
+
     <section>
-        <div>
-            
-        
-                
-                <label for="">Início:
-                    <input type="number" name="txtinicio" id="txtinicio">
-                </label> <br>
+      <div>
+        <label for=""
+          >Número:
+          <input type="number" name="txtinicio" id="number" />
+        </label>
 
-                <label for="">Fim:
-                    <input type="number" name="txtfim" id="txtfim">
-                </label> <br>
+        <input type="submit" value="Gerar Tabuada" onclick="gerar()" />
+      </div>
 
-                <label for="">Passo:
-                    <input type="number" name="txtpasso" id="txtpasso">
-                </label> <br>
-
-                <input type="submit" value="Contar" onclick="contar()">
-            
-        </div>
-        
-        <div id="resultado">
-            <p>Preparando a contagem...</p>
-
-        </div>
-    
+      <div>
+        <select name="tabuada" id="tabuada" size="10"></select>
+      </div>
     </section>
 
     <footer>&copy;CursoemVídeo</footer>
 
     <script src="arquivo.js"></script>
-</body>
+  </body>
 </html>

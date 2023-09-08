@@ -33,10 +33,6 @@ input{
     margin-bottom: 15px;
 }
 
-select{
-    overflow: hidden;
-}
-
 footer{
     text-align: center;
     color: white;
