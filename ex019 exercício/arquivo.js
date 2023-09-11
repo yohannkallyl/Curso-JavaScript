@@ -8,7 +8,6 @@ function gerar() {
     var n1 = Number(num.value);
     tab.innerHTML = ""
     
-    // *limpar a tabuada após um valor
   }
 
   for(cont = 1; cont <= 10; cont++){
