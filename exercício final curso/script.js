@@ -7,18 +7,7 @@ let valorExiste = false;
 // *Isso significa que o valor não existirá no começo, ou seja, antes de eu colocar um número, ele já vai entender que ele não existe
 
 
-
-
-//!Ao inicializar "maiorValor" com -Infinity, você está efetivamente dizendo que, neste momento, não existe um valor real na lista (ou seja, é como se ainda não houvesse valores) e que qualquer valor encontrado posteriormente será maior do que -Infinity
-
-
-
-
-
 function adicionar() {
-    let num = document.getElementById("num")
-    let tab = document.getElementById("tabuada")
-
     let opcoes = tab.getElementsByTagName("option")
     let valorExiste = false
     let valor = num.value
